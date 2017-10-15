@@ -3,34 +3,43 @@ HolaMundo en varios lenguajes
 
 ## Bash
 
+1. Ejecutamos el intérprete.  
+Este paso no es necesario aquí, puesto que ya estamos en el terminal.
+
+2. Escribimos las sentencias y luego pulsamos INTRO.
 ```bash
 echo "Hola Mundo"
 ```
 
+3. Para salir del intérprete pulsamos CTRL+D.
+
+
 ### Script ejecutable
 
-Editamos archivo __hola.sh__
+1. Editamos archivo __hola.sh__
 ```bash
 #!/usr/bin/env bash
 
 echo "Hola mundo"
 ```
 
-Damos permisos de ejecución
+2. Damos permisos de ejecución
 
-```
+```bash
 chmod  +x  hola.sh
 ```
 
-Ejecutamos
+3. Ejecutamos
 
-```
+```bash
 ./hola.sh
 ```
 
 
 
 ## Python
+
+### Pasos
 
 ```bash
 
