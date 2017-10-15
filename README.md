@@ -5,13 +5,13 @@ __HolaMundo en varios lenguajes de programación__
 El código fuente para distintos lenguajes de programación está disponible en:
 - https://es.wikipedia.org/wiki/Anexo:Ejemplos_de_implementaci%C3%B3n_del_%C2%ABHola_mundo%C2%BB  
 
-Probado en Ubuntu 16.04 LTS.
-
-Deberemos instalar los siguientes paquetes:
+Debemos instalar los siguientes paquetes:
 
 ```
 apt  install  python  php  nodejs  gcc  g++  default-jdk  default-jre  nasm  ruby  golang  rustc  clisp
 ```
+
+Probado en Ubuntu 16.04 LTS.
 
 --- 
 
@@ -248,8 +248,8 @@ g++  -o  hola  hola.cpp    # Compilamos y enlazamos
 ./hola                     # Ejecutamos
 ```
 
-
 --- 
+
 ## Java
 
 ### Pasos
@@ -354,19 +354,151 @@ ld  hola.o  -o  hola             # Enlazado y generación de ejecutable
 
 ## Ruby
 
+### Pasos
+
+1. Ejecutamos el intérprete.  
+
+```bash
+ruby
+```
+
+2. Escribimos las sentencias y luego pulsamos INTRO.
+
+```ruby
+puts "Hola Mundo"
+```
+
+3. Para salir del intérprete pulsamos CTRL+D.  
+
+
+### Script ejecutable
+
+1. Editamos archivo __hola.rb__
+
+```ruby
+#!/usr/bin/env ruby
+
+puts "Hola Mundo"
+```
+
+
+2. Damos permisos de ejecución
+
+```bash
+chmod  +x  hola.rb
+```
+
+3. Ejecutamos
+
+```bash
+./hola.rb
+```
 
 --- 
 
 ## Go
 
+### Pasos
+
+1. Editamos archivo __hola.go__ 
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+        fmt.Println("Hola mundo desde Go")
+}
+```
+
+2. Compilamos y enlazamos
+
+```bash
+go  build  hola.go   # Compilamos y enlazamos
+```
+
+3. Ejecutamos
+
+```bash
+./ hola              # Ejecutamos
+```
+
+4. Si lo deseamos,en Go también es posible interpretar el código
+
+```bash
+go  run  hola.go     # Interpretamos y ejecutamos
+```
 
 --- 
 
 ## Rust
 
+### Pasos
+
+1. Editamos archivo __hola.rs__
+
+```rust
+fn main() {
+    println!("¡Hola, mundo! Desde RUST ");
+}
+```
+
+2. Compilamos y enlazamos
+
+```bash
+rustc  hola.rs              # Compilamos y enlazamos
+```
+
+3. Ejecutamos
+
+```bash
+./hola                      # Ejecutamos
+```
 
 ---
+
 ## Lisp
+
+### Pasos
+
+1. Ejecutamos el intérprete.  
+
+```bash
+clisp
+```
+
+2. Escribimos las sentencias y luego pulsamos INTRO.
+
+```lisp
+(format t "¡Hola, mundo!")
+```
+
+3. Para salir del intérprete pulsamos CTRL+D.  
+
+
+### Script ejecutable
+
+1. Editamos archivo __hola.lisp__
+
+```lisp
+#!/usr/bin/env clisp
+
+(format t "¡Hola, mundo!")
+```
+
+
+2. Damos permisos de ejecución
+
+```bash
+chmod  +x  hola.lisp
+```
+
+3. Ejecutamos
+
+```bash
+./hola.lisp
+```
 
 
 
