@@ -2,6 +2,8 @@
 
 __HolaMundo en varios lenguajes de programación__
 
+--- 
+
 ## Bash
 
 ### Pasos
@@ -40,6 +42,8 @@ chmod  +x  hola.sh
 ```bash
 ./hola.sh
 ```
+
+--- 
 
 ## Python
 
@@ -83,31 +87,112 @@ chmod  +x  hola.py
 ./hola.py
 ```
 
+--- 
+
 ## PHP
 
+### Pasos
+
+1. Ejecutamos el intérprete.  
+
 ```bash
-
-
+php
 ```
+
+2. Escribimos las sentencias.
+
+```php
+<?php 
+  echo "Hola mundo\n" 
+?>
+```
+
+3. Para salir del intérprete pulsamos CTRL+D. Después veremos el resultado de la ejecución.  
+
 
 ### Script ejecutable
 
+1. Editamos archivo __hola.php__
+
+```php
+#!/usr/bin/env php
+
+<?php 
+  echo "Hola mundo\n" 
+?>
+```
+
+2. Damos permisos de ejecución
+
+```bash
+chmod  +x  hola.php
+```
+
+3. Ejecutamos
+
+```bash
+./hola.php
+```
+
+--- 
 
 ## Javascript (nodejs)
 
+### Pasos
+
+1. Ejecutamos el intérprete.  
+
 ```bash
-
-
+node
 ```
+
+2. Escribimos las sentencias y luego pulsamos INTRO.
+
+```nodejs
+console.log('Hola mundo');
+```
+
+3. Para salir del intérprete pulsamos CTRL+D.  
+
+
+### Script ejecutable
+
+1. Editamos archivo __hola.js__
+
+```nodejs
+#!/usr/bin/env node
+
+console.log('Hola mundo');
+```
+
+
+2. Damos permisos de ejecución
+
+```bash
+chmod  +x  hola.js
+```
+
+3. Ejecutamos
+
+```bash
+./hola.js
+```
+
+--- 
 
 ### Script ejecutable
 
 
+ 
+---
+
 ## C
+
+--- 
 
 ## C++
 
-
+--- 
 ## Java
 
 ### Pasos
@@ -134,17 +219,24 @@ chmod  +x  hola.jar                    # Damos permiso de ejecución
 ```bash
 nasm  -f  elf64  hola.asm        # Ensamblado para ELF64
 ld  hola.o  -o  hola             # Enlazado y generación de ejecutable
+./hola                           # Ejecución
 ```
+--- 
 
 ## Ruby
 
 
+--- 
+
 ## Go
 
+
+--- 
 
 ## Rust
 
 
+---
 ## Lisp
 
 
