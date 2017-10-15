@@ -11,7 +11,7 @@ Debemos instalar los siguientes paquetes:
 apt  install  python  php  nodejs  gcc  g++  default-jdk  default-jre  nasm  ruby  golang  rustc  clisp
 ```
 
-Probado en Ubuntu 16.04 LTS.
+Plataforma usada: Ubuntu 16.04 LTS.
 
 --- 
 
