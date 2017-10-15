@@ -2,8 +2,16 @@
 
 __HolaMundo en varios lenguajes de programación__
 
-> El código fuente para distintos lenguajes de programación está disponible en:
-> - https://es.wikipedia.org/wiki/Anexo:Ejemplos_de_implementaci%C3%B3n_del_%C2%ABHola_mundo%C2%BB  
+El código fuente para distintos lenguajes de programación está disponible en:
+- https://es.wikipedia.org/wiki/Anexo:Ejemplos_de_implementaci%C3%B3n_del_%C2%ABHola_mundo%C2%BB  
+
+Probado en Ubuntu 16.04 LTS.
+
+Deberemos instalar los siguientes paquetes:
+
+```
+apt  install  python  php  nodejs  gcc  g++  default-jdk  default-jre  nasm  ruby  golang  rustc  clisp
+```
 
 --- 
 
@@ -149,7 +157,7 @@ node
 
 2. Escribimos las sentencias y luego pulsamos INTRO.
 
-```nodejs
+```javascript
 console.log('Hola mundo');
 ```
 
@@ -160,7 +168,7 @@ console.log('Hola mundo');
 
 1. Editamos archivo __hola.js__
 
-```nodejs
+```javascript
 #!/usr/bin/env node
 
 console.log('Hola mundo');
@@ -274,9 +282,32 @@ java  Hola            # Interpretamos y ejecutamos
 
 > Realmente no es un script, sino __bytecode empaquetado en JAR__ e interpretado por la JVM (Java Virtual Machine).
 
+1. Empaquetamos
+
 ```bash
 jar  cvfe  hola.jar  Hola  Hola.class  # Empaquetamos  
+```
+
+```
+NOTA: Las opciones utilizadas en el comando jar son:
+
+c: Create      (Crear archivo jar)
+v: Verbose     (Mostrar información)
+f: File        (Nombre de archivo jar, en este caso hola.jar)
+e: Entry point (Punto de entrada, en este caso la clase Hola)
+ 
+Como último parámetro indicamos el bytecode a incluir, en este caso Hola.class.
+```
+
+2. Damos permiso de ejecución
+
+```bash
 chmod  +x  hola.jar                    # Damos permiso de ejecución
+```
+
+3. Ejecutamos
+
+```bash
 ./hola.jar                             # Ejecutamos
 ```
 
