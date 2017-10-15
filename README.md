@@ -6,6 +6,7 @@ HolaMundo en varios lenguajes
 ### Pasos
 
 1. Ejecutamos el intérprete.  
+
 Este paso no es necesario aquí, puesto que ya estamos en el terminal.
 
 2. Escribimos las sentencias y luego pulsamos INTRO.
@@ -13,7 +14,9 @@ Este paso no es necesario aquí, puesto que ya estamos en el terminal.
 echo "Hola Mundo"
 ```
 
-3. Para salir del intérprete pulsamos CTRL+D.
+3. Para salir del intérprete pulsamos CTRL+D.  
+
+No pulsar esta combinación si no queremos cerrar el terminal.
 
 
 ### Script ejecutable
