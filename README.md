@@ -2,6 +2,9 @@
 
 __HolaMundo en varios lenguajes de programación__
 
+> El código fuente para distintos lenguajes de programación está disponible en:
+> - https://es.wikipedia.org/wiki/Anexo:Ejemplos_de_implementaci%C3%B3n_del_%C2%ABHola_mundo%C2%BB  
+
 --- 
 
 ## Bash
@@ -9,7 +12,6 @@ __HolaMundo en varios lenguajes de programación__
 ### Pasos
 
 1. Ejecutamos el intérprete.  
-
   Este paso no es necesario aquí, puesto que ya estamos en el terminal.
 
 2. Escribimos las sentencias y luego pulsamos INTRO.
@@ -18,7 +20,6 @@ echo "Hola Mundo"
 ```
 
 3. Para salir del intérprete pulsamos CTRL+D.  
-
   No pulsar esta combinación si no queremos cerrar el terminal.
 
 
@@ -178,12 +179,6 @@ chmod  +x  hola.js
 ./hola.js
 ```
 
---- 
-
-### Script ejecutable
-
-
- 
 ---
 
 ## C
@@ -196,6 +191,19 @@ chmod  +x  hola.js
 ## Java
 
 ### Pasos
+
+1. Editamos archivo __Hola.java__
+```java
+class Hola
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Hola Mundo");
+    }
+}
+```
+
+2. Compilamos y ejecutamos
 
 ```bash
 javac  Hola.java      # Compilamos
