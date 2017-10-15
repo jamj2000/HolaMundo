@@ -7,9 +7,9 @@ HolaMundo en varios lenguajes
 Este paso no es necesario aquí, puesto que ya estamos en el terminal.
 
 2. Escribimos las sentencias y luego pulsamos INTRO.
-```bash
-echo "Hola Mundo"
-```
+  ```bash
+  echo "Hola Mundo"
+  ```
 
 3. Para salir del intérprete pulsamos CTRL+D.
 
@@ -17,23 +17,23 @@ echo "Hola Mundo"
 ### Script ejecutable
 
 1. Editamos archivo __hola.sh__
-```bash
-#!/usr/bin/env bash
+  ```bash
+  #!/usr/bin/env bash
 
-echo "Hola mundo"
-```
+  echo "Hola mundo"
+  ```
 
 2. Damos permisos de ejecución
 
-```bash
-chmod  +x  hola.sh
-```
+  ```bash
+  chmod  +x  hola.sh
+  ```
 
 3. Ejecutamos
 
-```bash
-./hola.sh
-```
+  ```bash
+  ./hola.sh
+  ```
 
 
 
