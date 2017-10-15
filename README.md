@@ -1,5 +1,6 @@
 # DAW1-ED-HolaMundo
-HolaMundo en varios lenguajes  
+
+__HolaMundo en varios lenguajes de programación__
 
 ## Bash
 
@@ -7,7 +8,7 @@ HolaMundo en varios lenguajes
 
 1. Ejecutamos el intérprete.  
 
-Este paso no es necesario aquí, puesto que ya estamos en el terminal.
+  Este paso no es necesario aquí, puesto que ya estamos en el terminal.
 
 2. Escribimos las sentencias y luego pulsamos INTRO.
 ```bash
@@ -16,7 +17,7 @@ echo "Hola Mundo"
 
 3. Para salir del intérprete pulsamos CTRL+D.  
 
-No pulsar esta combinación si no queremos cerrar el terminal.
+  No pulsar esta combinación si no queremos cerrar el terminal.
 
 
 ### Script ejecutable
@@ -44,16 +45,42 @@ chmod  +x  hola.sh
 
 ### Pasos
 
-```bash
+1. Ejecutamos el intérprete.  
 
+```bash
+python
 ```
 
+2. Escribimos las sentencias y luego pulsamos INTRO.
+
+```python
+print "Hola Mundo"
+```
+
+3. Para salir del intérprete pulsamos CTRL+D.  
+
+
 ### Script ejecutable
+
+1. Editamos archivo __hola.py__
 
 ```python
 #!/usr/bin/env python
 
 print "Hola mundo"
+```
+
+
+2. Damos permisos de ejecución
+
+```bash
+chmod  +x  hola.py
+```
+
+3. Ejecutamos
+
+```bash
+./hola.py
 ```
 
 ## PHP
