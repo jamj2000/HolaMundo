@@ -183,9 +183,63 @@ chmod  +x  hola.js
 
 ## C
 
+### Pasos 
+
+1. Editamos archivo __hola.c__
+
+```c 
+#include <stdio.h>
+
+int main()
+{
+    printf("¡Hola, mundo!");
+    return 0;
+}
+```
+
+2. Compilamos y enlazamos
+
+```bash
+gcc  -o  hola  hola.c      # Compilamos y enlazamos
+```
+
+3. Ejecutamos
+
+```bash
+./hola                     # Ejecutamos
+```
 --- 
 
 ## C++
+
+### Pasos 
+
+1. Editamos archivo __hola.cpp__
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   cout << "¡Hola, mundo!" << endl;
+   return 0;
+}
+```
+
+2. Compilamos y enlazamos
+
+```bash
+g++  -o  hola  hola.cpp    # Compilamos y enlazamos
+```
+
+3. Ejecutamos
+
+```bash
+./hola                     # Ejecutamos
+```
+
 
 --- 
 ## Java
@@ -193,6 +247,7 @@ chmod  +x  hola.js
 ### Pasos
 
 1. Editamos archivo __Hola.java__
+
 ```java
 class Hola
 {
@@ -203,10 +258,15 @@ class Hola
 }
 ```
 
-2. Compilamos y ejecutamos
+2. Compilamos
 
 ```bash
 javac  Hola.java      # Compilamos
+```
+
+3. Interpretamos y ejecutamos
+
+```bash
 java  Hola            # Interpretamos y ejecutamos
 ```
 
@@ -224,9 +284,39 @@ chmod  +x  hola.jar                    # Damos permiso de ejecución
 
 ### Pasos
 
+1. Editamos archivo __hola.asm__
+
+```nasm
+ section .data
+ 
+ msg     db "¡Hola Mundo!", 0Ah
+ len     equ     $ - msg  
+ 
+ section .text
+ 
+ global _start
+ 
+ _start:
+        mov     eax, 04h
+        mov     ebx, 01h
+        mov     ecx, msg
+        mov     edx, len
+        int     80h
+        mov     eax, 01h
+        mov     ebx, 00h
+        int     80h
+```
+
+2. Ensamblamos y enlazamos
+
 ```bash
 nasm  -f  elf64  hola.asm        # Ensamblado para ELF64
 ld  hola.o  -o  hola             # Enlazado y generación de ejecutable
+```
+
+3. Ejecutamos
+
+```bash
 ./hola                           # Ejecución
 ```
 --- 
