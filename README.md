@@ -2,6 +2,11 @@
 
 __HolaMundo en varios lenguajes de programación__
 
+En este documento se indican los pasos que deberemos seguir para ejecutar código en distintos lenguajes de programación.
+
+En el caso de lenguajes interpretados se indica también la forma de generar un script ejecutable. 
+
+
 El código fuente para distintos lenguajes de programación está disponible en:
 - https://es.wikipedia.org/wiki/Anexo:Ejemplos_de_implementaci%C3%B3n_del_%C2%ABHola_mundo%C2%BB  
 
