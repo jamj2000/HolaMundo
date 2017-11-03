@@ -316,6 +316,27 @@ chmod  +x  hola.jar                    # Damos permiso de ejecución
 ./hola.jar                             # Ejecutamos
 ```
 
+> NOTA: Si tienes problemas para ejecutar el archivo .jar de forma directa, quizás no tienes asociada ninguna aplicación a dicho tipo de archivo.
+>
+> Comprueba que tienes el archivo `/usr/share/applications/openjdk-8-java.desktop` con el siguiente contenido:
+> ```
+> [Desktop Entry]
+> Name=OpenJDK Java 8 Runtime
+> Name[fi]=OpenJDK Java 8 - ajonaikainen ympäristö
+> Comment=OpenJDK Java 8 Runtime
+> Comment[fi]=OpenJDK Java 8 - ajonaikainen ympäristö
+> Keywords=java;runtime
+> Exec=cautious-launcher %f /usr/bin/java -jar
+> Terminal=false
+> Type=Application
+> Icon=openjdk-8
+> MimeType=application/x-java-archive;application/java-archive;application/x-jar;
+> NoDisplay=true
+> ```
+> Si tienes otra versión de Java, debes modificar el nombre del archivo y su contenido para reflejar tal situación. 
+>
+
+
 ## Ensamblador (nasm)
 
 ### Pasos
