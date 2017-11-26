@@ -316,7 +316,15 @@ chmod  +x  hola.jar                    # Damos permiso de ejecución
 ./hola.jar                             # Ejecutamos
 ```
 
-> NOTA: Si tienes problemas para ejecutar el archivo .jar de forma directa, quizás no tienes asociada ninguna aplicación a dicho tipo de archivo.
+> NOTA: La forma tradicional de ejecutar un archivo jar es invocando al intéprete java:
+>
+> ```bash
+> java  -jar   hola.jar
+>```
+
+
+>NOTA: Los pasos 2 y 3 no funcionan en todas las distribuiciones de Linux. Parece ser algo relacionado con la asociación de la aplicación al tipo de archivo.
+> Si tienes problemas para ejecutar el archivo .jar de forma directa, quizás no tienes asociada ninguna aplicación a dicho tipo de archivo.
 >
 > Comprueba que tienes el archivo `/usr/share/applications/openjdk-8-java.desktop` con el siguiente contenido:
 > ```
