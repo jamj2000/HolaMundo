@@ -1,8 +1,8 @@
 # Lenguajes que compilan a bytecode de JVM
 
-Existen algunos lenguajes que compilan a bytecode, el cual puede ejecutarse en la máquina virtual de Java (JVM)
+Existen diferentes lenguajes que compilan a bytecode, el cual puede ejecutarse en la máquina virtual de Java (JVM)
 
-Los más conocidos soon:
+Los más conocidos son:
 
 - __Clojure__, un dialecto de Lisp funcional
 - __JRuby__, una implementación de Ruby
