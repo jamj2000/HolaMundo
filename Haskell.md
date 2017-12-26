@@ -2,7 +2,7 @@
 
 Haskell es un lenguaje que soporta el paradigma de **programación funcional**. Es un lenguaje que apareció después del lenguaje `Lisp`, el cual también es funcional.
 
-Es un lenguaje moderno con varias implementaciones. Las más conocidas son:
+Es un lenguaje moderno con varias implementaciones. Dos de ellas son:
 - Glasgow Haskell Compiler
 - Hugs
 
@@ -21,7 +21,7 @@ sudo  apt  install  ghc
 Si hacemos uso de `Glasgow Haskell Compiler` dispondremos de 2 opciones:
 
 - ghc (Compilador)
-- ghci (Interprete)
+- ghci (Intérprete)
 
 Lo cual significa que podemos tanto compilar como interpretar código. A continuación se muestra cómo.
 
