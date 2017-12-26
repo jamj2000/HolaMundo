@@ -41,6 +41,21 @@ Hola mundo
 yes
 ```
 
+El código anterior es una **consulta**. 
+
+La línea de comandos anterior solo permitirá emitir consultas. Para indicar las **reglas** y los **hechos** necesitamos crear un archivo y escribir el código allí. 
+
+Un ejemplo más elaborado es el siguiente:
+
+
+
+
+También existen un compilador llamado `gplc`. Para compilar el código anterior, hacemos:
+
+```
+gplc familia.pl
+``` 
+
 Para salir del interprete pulsamos `Ctrl+D`.
 
 
@@ -48,6 +63,9 @@ Para salir del interprete pulsamos `Ctrl+D`.
 
 - [Prolog en Wikipedia](https://es.wikipedia.org/wiki/Prolog)
 - [Implemantaciones de Prolog](https://en.wikipedia.org/wiki/Comparison_of_Prolog_implementations)
+- [Tutorial básico de Prolog](https://portal.uah.es/portal/page/portal/GP_EPD/PG-MA-ASIG/PG-ASIG-78010/TAB42351/Tutorial_Basico_Prolog.pdf)
 - [TRY LOGIC PROGRAMMING! A GENTLE INTRODUCTION TO PROLOG](https://bernardopires.com/2013/10/try-logic-programming-a-gentle-introduction-to-prolog/)
 - [Prolog: A Tutorial Introduction by James Lu and Jerud Mead (PDF)](https://classes.soe.ucsc.edu/cmps112/Spring03/languages/prolog/PrologIntro.pdf)
+- [Executing Prolog code](http://www.swi-prolog.org/FAQ/ToplevelMode.html)
+- [Sitio oficial de GNU Prolog](http://www.gprolog.org/)
 
