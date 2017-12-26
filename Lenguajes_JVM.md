@@ -13,9 +13,9 @@ Los más conocidos son:
 
 En los siguientes enlaces tienes algunos ejemplos de instalación y uso.
 
-- [Groovy](https://github.com/jamj2000/DAW1-ED-HolaMundo/blob/master/Groovy.md)
-- [Scala](https://github.com/jamj2000/DAW1-ED-HolaMundo/blob/master/Scala.md)
-- [Kotlin](https://github.com/jamj2000/DAW1-ED-HolaMundo/blob/master/Kotlin.md)
+- [Groovy](Groovy.md)
+- [Scala](Scala.md)
+- [Kotlin](Kotlin.md)
 
 
 ## Referencias
