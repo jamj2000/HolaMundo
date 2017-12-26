@@ -11,21 +11,13 @@ Los más conocidos son:
 - __Scala__, un lenguaje de programación funcional y orientado a objetos con tipado estático
 - __Kotlin__, un lenguaje con tipado estático
 
-A continuación se muestran algunos ejemplos de instalación y uso.
+En los siguientes enlaces tienes algunos ejemplos de instalación y uso.
 
-## Groovy
-
-
-## Scala
-
-
-
-## Kotlin
-
-
+- [Groovy](https://github.com/jamj2000/DAW1-ED-HolaMundo/blob/master/Groovy.md)
+- [Scala](https://github.com/jamj2000/DAW1-ED-HolaMundo/blob/master/Scala.md)
+- [Kotlin](https://github.com/jamj2000/DAW1-ED-HolaMundo/blob/master/Kotlin.md)
 
 
 ## Referencias
 
 - https://en.wikipedia.org/wiki/List_of_JVM_languages
-- https://try.kotlinlang.org
