@@ -58,6 +58,31 @@ scala HolaMundo
 
 > NOTA: La versión de la biblioteca usada aquí (`scala-library-2.11.6.jar`) puede diferir de la que tú tengas instalada.
 
+
+## HolaMundo gráfico
+
+```scala
+import scala.swing._
+
+/**
+ * A simple swing demo.
+ */
+object HelloWorld extends SimpleSwingApplication {
+  def top = new MainFrame {
+    title = "Hello, World!"
+    contents = new Button("¡Hola Mundo!.")
+  }
+}
+
+// Referencia: https://github.com/scala/scala-swing
+
+// NOTA: Es necesario disponer de la biblioteca scala-swing.jar 
+```
+
+
+
 ## Referencias
 
 - http://docs.scala-lang.org/tutorials/scala-for-java-programmers.html
+- https://github.com/scala/scala-swing
+- https://github.com/otfried/cs109-scala/tree/master/swing
