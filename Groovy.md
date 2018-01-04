@@ -12,7 +12,7 @@ sudo  apt  install  groovy
 
 El paquete incluye, entre otros archivos: 
 
-- un **interprete** cuyo nombre es **`groovy`**
+- un **intérprete** cuyo nombre es **`groovy`**
 - un **compilador** cuyo nombre es **`groovyc`**. 
 
 ## HolaMundo en Groovy
