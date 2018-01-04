@@ -17,7 +17,7 @@ El paquete incluye, entre otros archivos:
 
 ## HolaMundo en Groovy
 
-El código fuente se almacena en el archivo hola.groovy y es el siguiente:
+El código fuente se almacena en el archivo *`hola.groovy`* y es el siguiente:
 
 ```groovy
 class HolaMundo {
@@ -43,11 +43,13 @@ Para generar bytecode .class utilizamos el compilador `groovyc`
 groovyc  hola.groovy
 ```
 
-Para ejecutar dicho bytecode recurrimos a la JVM y la **biblioteca estándar de groovy**
+Para ejecutar archivo HolaMundo.class generado recurrimos a la JVM y la **biblioteca estándar de groovy**:
 
 ```bash
 java  -cp  /usr/share/java/groovy-all-2.x.jar:.  HolaMundo
 ```
+
+> NOTA: La versión de la biblioteca usada aquí (`groovy-all-2.x.jar`) puede diferir de la que tú tengas instalada.
 
 ## Referencias
 
