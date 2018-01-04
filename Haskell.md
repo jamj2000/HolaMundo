@@ -9,7 +9,7 @@ Es un lenguaje moderno con varias implementaciones. Dos de ellas son:
 
 ## Instalación
 
-En Linux, podemos instalar el `Glasgow Haskell Compiler` mediante:
+En Linux (Debian y derivadas), podemos instalar el `Glasgow Haskell Compiler` mediante:
 
 ```bash
 sudo  apt  install  ghc
