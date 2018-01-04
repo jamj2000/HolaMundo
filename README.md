@@ -535,4 +535,13 @@ chmod  +x  hola.lisp
 ```
 
 
+## Otros lenguajes
+
+Otros lenguajes menos comunes, pero de interés por diversos motivos, se tratan en los siguientes enlaces:
+
+- [Groovy](Groovy.md)
+- [Scala](Scala.md)
+- [Kotlin](Kotlin.md)
+- [Haskell](Haskell.md)
+- [Prolog](Prolog.md)
 
