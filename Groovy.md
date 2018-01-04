@@ -10,8 +10,14 @@ En Linux (Debian y derivadas) podemos instalar groovy con el siguiente comando:
 sudo  apt  install  groovy
 ```
 
+El paquete incluye, entre otros archivos: 
+
+- un **interprete** cuyo nombre es **`groovy`**
+- un **compilador** cuyo nombre es **`groovyc`**. 
 
 ## HolaMundo en Groovy
+
+El código fuente se almacena en el archivo hola.groovy y es el siguiente:
 
 ```groovy
 class HolaMundo {
@@ -21,5 +27,28 @@ class HolaMundo {
 }
 ```
 
+## Interpretar código
+
+Es posible ejecutar directamente el código fuente haciendo uso del interprete `groovy`
+
+```bash
+groovy  hola.groovy
+```
+
+## Compilar código
+
+Para generar bytecode .class utilizamos el compilador `groovyc`
+
+```bash
+groovyc  hola.groovy
+```
+
+Para ejecutar dicho bytecode recurrimos a la JVM y la **biblioteca estándar de groovy**
+
+```bash
+java  -cp  /usr/share/java/groovy-all-2.x.jar:.  HolaMundo
+```
 
 ## Referencias
+
+- http://www.davidmarco.es/archivo/tutorial-groovy
