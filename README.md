@@ -13,7 +13,7 @@ El código fuente para distintos lenguajes de programación está disponible en:
 Debemos instalar los siguientes paquetes:
 
 ```
-apt  install  python  php  nodejs  gcc  g++  default-jdk  default-jre  nasm  ruby  golang  rustc  clisp
+apt  install  python  php  nodejs  gcc  g++  openjdk-8-jdk  nasm  ruby  golang  rustc  clisp
 ```
 
 Plataforma usada: Ubuntu 16.04 LTS.
