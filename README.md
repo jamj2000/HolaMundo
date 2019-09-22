@@ -16,7 +16,7 @@ Debemos instalar los siguientes paquetes:
 apt  install  python  php  nodejs  gcc  g++  openjdk-8-jdk  nasm  ruby  golang  rustc  clisp
 ```
 
-Plataforma usada: Ubuntu 16.04 LTS.
+Plataforma usada: Ubuntu 18.04 LTS.
 
 --- 
 
