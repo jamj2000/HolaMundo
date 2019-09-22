@@ -47,7 +47,7 @@ La línea de comandos anterior solo permitirá emitir consultas. Para indicar la
 
 Un ejemplo más elaborado es el siguiente. 
 
-Tenemos un archivo `familia.pl` que continie los hechos y las reglas.
+Tenemos un archivo `familia.pl` que contiene los hechos y las reglas.
 
 ```prolog
 %%  Hechos
