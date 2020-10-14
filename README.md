@@ -13,10 +13,10 @@ El código fuente para distintos lenguajes de programación está disponible en:
 Debemos instalar los siguientes paquetes:
 
 ```
-apt  install  python  php  nodejs  gcc  g++  openjdk-8-jdk  nasm  ruby  golang  rustc  clisp
+apt  install  python  php  nodejs  gcc  g++  openjdk-11-jdk  nasm  ruby  golang  rustc  clisp
 ```
 
-Plataforma usada: Ubuntu 18.04 LTS.
+Plataforma usada: Ubuntu 20.04 LTS.
 
 --- 
 
@@ -110,18 +110,16 @@ chmod  +x  hola.py
 1. Ejecutamos el intérprete.  
 
 ```bash
-php
+php -a
 ```
 
 2. Escribimos las sentencias.
 
 ```php
-<?php 
-  echo "Hola mundo\n" 
-?>
+echo "Hola mundo\n";
 ```
 
-3. Para salir del intérprete pulsamos CTRL+D. Después veremos el resultado de la ejecución.  
+3. Para salir del intérprete pulsamos CTRL+D.   
 
 
 ### Script ejecutable
@@ -293,16 +291,37 @@ java  Hola            # Interpretamos y ejecutamos
 jar  cvfe  hola.jar  Hola  Hola.class  # Empaquetamos  
 ```
 
-```
-NOTA: Las opciones utilizadas en el comando jar son:
+> NOTA: 
+>
+> Las opciones utilizadas en el comando jar son:
+> 
+> ```
+> c: Create      (Crear archivo jar)
+> v: Verbose     (Mostrar información)
+> f: File        (Nombre de archivo jar, en este caso hola.jar)
+> e: Entry point (Punto de entrada, en este caso la clase Hola)
+> ```
+> 
+> Los argumentos utilizados son:
+> 
+> ```
+> hola.jar:    (opción f anterior)  Archivo .jar resultante.
+> Hola:        (opción e anterior) Clase que contiene el método main (es decir el punto de entrada)
+> Hola.class:  Archivos de bytecode a incluir en hola.jar. Pueden ser varios archivos.
+> ```
+>
+> Los argumentos deben seguir el mismo orden que las opciones. En este caso indicamos primero el nombre del archivo .jar y luego la clase que contiene el método main.
 
-c: Create      (Crear archivo jar)
-v: Verbose     (Mostrar información)
-f: File        (Nombre de archivo jar, en este caso hola.jar)
-e: Entry point (Punto de entrada, en este caso la clase Hola)
- 
-Como último parámetro indicamos el bytecode a incluir, en este caso Hola.class.
-```
+
+> **NOTA IMPORTANTE: La FORMA HABITUAL de ejecutar un archivo .jar es invocando al intéprete java, es decir la siguiente:**
+>
+> ```bash
+> java  -jar   hola.jar
+>```
+>
+> **Los pasos 2 y 3 siguientes no es la forma habitual de ejecutar un archivo .jar, 
+> pero se indican para mostrar su similitud respecto al método usado para otros lenguajes interpretados**.
+
 
 2. Damos permiso de ejecución
 
@@ -316,28 +335,23 @@ chmod  +x  hola.jar                    # Damos permiso de ejecución
 ./hola.jar                             # Ejecutamos
 ```
 
-> NOTA: La forma tradicional de ejecutar un archivo jar es invocando al intéprete java:
->
-> ```bash
-> java  -jar   hola.jar
->```
 
 
 >NOTA: Los pasos 2 y 3 no funcionan en todas las distribuiciones de Linux. Parece ser algo relacionado con la asociación de la aplicación al tipo de archivo.
-> Si tienes problemas para ejecutar el archivo .jar de forma directa, quizás no tienes asociada ninguna aplicación a dicho tipo de archivo.
+> Si tienes problemas para ejecutar el archivo .jar de esta forma, quizás no tienes asociada ninguna aplicación a dicho tipo de archivo.
 >
-> Comprueba que tienes el archivo `/usr/share/applications/openjdk-8-java.desktop` con el siguiente contenido:
+> Si deseas investigar, comprueba que tienes el archivo `/usr/share/applications/openjdk-11-java.desktop` con el siguiente contenido:
 > ```
 > [Desktop Entry]
-> Name=OpenJDK Java 8 Runtime
-> Name[fi]=OpenJDK Java 8 - ajonaikainen ympäristö
-> Comment=OpenJDK Java 8 Runtime
-> Comment[fi]=OpenJDK Java 8 - ajonaikainen ympäristö
+> Name=OpenJDK Java 11 Runtime
+> Name[fi]=OpenJDK Java 11 - ajonaikainen ympäristö
+> Comment=OpenJDK Java 11 Runtime
+> Comment[fi]=OpenJDK Java 11 - ajonaikainen ympäristö
 > Keywords=java;runtime
 > Exec=cautious-launcher %f /usr/bin/java -jar
 > Terminal=false
 > Type=Application
-> Icon=openjdk-8
+> Icon=openjdk-11
 > MimeType=application/x-java-archive;application/java-archive;application/x-jar;
 > NoDisplay=true
 > ```
