@@ -10,13 +10,28 @@ En el caso de lenguajes interpretados se indica también la forma de generar un 
 El código fuente para distintos lenguajes de programación está disponible en:
 - https://es.wikipedia.org/wiki/Anexo:Ejemplos_de_implementaci%C3%B3n_del_%C2%ABHola_mundo%C2%BB  
 
-Debemos instalar los siguientes paquetes:
+
+Plataforma usada: Ubuntu 20.04 LTS.
+
+Lenguajes usados:
+- Bash
+- Python
+- PHP
+- Javascript (nodejs)
+- C
+- C++
+- Java
+- Ensamblador (nasm)
+- Ruby
+- Go
+- Rust
+- Lisp
+
+Para tener soporte para los lenguajes anteriores, debemos instalar los siguientes paquetes:
 
 ```
 apt  install  python  php  nodejs  gcc  g++  openjdk-11-jdk  nasm  ruby  golang  rustc  clisp
 ```
-
-Plataforma usada: Ubuntu 20.04 LTS.
 
 --- 
 
@@ -305,7 +320,7 @@ jar  cvfe  hola.jar  Hola  Hola.class  # Empaquetamos
 > Los argumentos utilizados son:
 > 
 > ```
-> hola.jar:    (opción f anterior)  Archivo .jar resultante.
+> hola.jar:    (opción f anterior) Archivo .jar resultante.
 > Hola:        (opción e anterior) Clase que contiene el método main (es decir el punto de entrada)
 > Hola.class:  Archivos de bytecode a incluir en hola.jar. Pueden ser varios archivos.
 > ```
