@@ -30,7 +30,7 @@ Lenguajes usados:
 Para tener soporte para los lenguajes anteriores, debemos instalar los siguientes paquetes:
 
 ```
-apt  install  python  php  nodejs  gcc  g++  openjdk-11-jdk  nasm  ruby  golang  rustc  clisp
+apt  install  python  php  nodejs  gcc  g++  openjdk-8-jdk  nasm  ruby  golang  rustc  clisp
 ```
 
 --- 
