@@ -70,7 +70,7 @@ abuelo(A,B) :-
 
 % A y B son hermanos si el padre de A es también el padre de B y si A y B no son lo mismo
 hermano(A,B) :- 
-   padre(C,A) , 
+   padre(C,A), 
    padre(C,B), 
    A \== B.        
 
@@ -82,6 +82,11 @@ familiar(A,B) :-
 familiar(A,B) :- 
    hermano(A,B).
 ```
+
+La relación entre las distintas personas queda así:
+
+![familia](codigo/familia.png)
+
 
 Invocamos el intérprete `gprolog`.
 
