@@ -1,56 +1,31 @@
-%%  Hechos
+%%  HECHOS
 
-padrede('juan', 'maria'). % juan es padre de maria
-padrede('pablo', 'juan'). %pablo es padre de juan
-padrede('pablo', 'marcela'). % pablo es padre de marcela
-padrede('carlos', 'debora'). % carlos es padre de debora
+padre('juan', 'maria').    % juan es padre de maria
+padre('pablo', 'juan').    % pablo es padre de juan
+padre('pablo', 'marcela'). % pablo es padre de marcela
+padre('carlos', 'debora'). % carlos es padre de debora
 
 
-%% Reglas
+%% REGLAS
 
 % A es hijo de B si B es padre de A
-hijode(A,B) :- padrede(B,A).
+hijo(A,B) :- padre(B,A).
 
 % A es abuelo de B si A es padre de C y C es padre B
-abuelode(A,B) :- 
-   padrede(A,C), 
-   padrede(C,B).
+abuelo(A,B) :- 
+   padre(A,C), 
+   padre(C,B).
 
 % A y B son hermanos si el padre de A es también el padre de B y si A y B no son lo mismo
-hermanode(A,B) :- 
-   padrede(C,A) , 
-   padrede(C,B), 
+hermano(A,B) :- 
+   padre(C,A) , 
+   padre(C,B), 
    A \== B.        
 
 % A y B son familiares si A es padre de B o A es hijo de B o A es hermano de B
-familiarde(A,B) :- 
-   padrede(A,B).
-familiarde(A,B) :-
-   hijode(A,B). 
-familiarde(A,B) :- 
-   hermanode(A,B).
-
-
-%% consultas
-
-%:- initialization
-%   format('Hello world!~n'),
-%   writeln('hola mundo'),
-%   writeln(hermanode('carlos', 'juan')).
-
-%:- initialization
-% juan es hermano de marcela?
-% hermanode('juan', 'marcela').
-% Respuesta: yes
-
-% carlos es hermano de juan?
-% hermanode('carlos', 'juan').
-% Respuesta: no
-
-% pablo es abuelo de maria?
-% abuelode('pablo', 'maria').
-% Respuesta: yes
-
-% maria es abuela de pablo?
-% abuelode('maria', 'pablo').
-% Respuesta: no
+familiar(A,B) :- 
+   padre(A,B).
+familiar(A,B) :-
+   hijo(A,B). 
+familiar(A,B) :- 
+   hermano(A,B).
