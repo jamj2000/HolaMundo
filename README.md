@@ -7,8 +7,9 @@ En este documento se indican los pasos que deberemos seguir para ejecutar códig
 En el caso de lenguajes interpretados se indica también la forma de generar un script ejecutable. 
 
 
-El código fuente para distintos lenguajes de programación está disponible en:
-- https://es.wikipedia.org/wiki/Anexo:Ejemplos_de_implementaci%C3%B3n_del_%C2%ABHola_mundo%C2%BB  
+El código fuente para algunos lenguajes de programación está disponible en:
+
+- https://es.wikipedia.org/wiki/Hola_mundo#Ejemplos
 
 
 Plataforma usada: Ubuntu 20.04 LTS.
