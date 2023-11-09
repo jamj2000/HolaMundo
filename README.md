@@ -1,4 +1,4 @@
-# DAW1-ED-HolaMundo
+# HolaMundo
 
 __HolaMundo en varios lenguajes de programación__
 
