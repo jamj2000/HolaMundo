@@ -356,18 +356,18 @@ chmod  +x  hola.jar                    # Damos permiso de ejecución
 >NOTA: Los pasos 2 y 3 no funcionan en todas las distribuiciones de Linux. Parece ser algo relacionado con la asociación de la aplicación al tipo de archivo.
 > Si tienes problemas para ejecutar el archivo .jar de esta forma, quizás no tienes asociada ninguna aplicación a dicho tipo de archivo.
 >
-> Si deseas investigar, comprueba que tienes el archivo `/usr/share/applications/openjdk-11-java.desktop` con el siguiente contenido:
+> Si deseas investigar, comprueba que tienes el archivo `/usr/share/applications/openjdk-17-java.desktop` con el siguiente contenido:
 > ```
 > [Desktop Entry]
-> Name=OpenJDK Java 11 Runtime
-> Name[fi]=OpenJDK Java 11 - ajonaikainen ympäristö
-> Comment=OpenJDK Java 11 Runtime
-> Comment[fi]=OpenJDK Java 11 - ajonaikainen ympäristö
+> Name=OpenJDK Java 17 Runtime
+> Name[fi]=OpenJDK Java 17 - ajonaikainen ympäristö
+> Comment=OpenJDK Java 17 Runtime
+> Comment[fi]=OpenJDK Java 17 - ajonaikainen ympäristö
 > Keywords=java;runtime
 > Exec=cautious-launcher %f /usr/bin/java -jar
 > Terminal=false
 > Type=Application
-> Icon=openjdk-11
+> Icon=openjdk-17
 > MimeType=application/x-java-archive;application/java-archive;application/x-jar;
 > NoDisplay=true
 > ```
