@@ -82,13 +82,13 @@ chmod  +x  hola.sh
 1. Ejecutamos el intérprete.  
 
 ```bash
-python
+python3
 ```
 
 2. Escribimos las sentencias y luego pulsamos INTRO.
 
 ```python
-print "Hola Mundo"
+print ("Hola Mundo")
 ```
 
 3. Para salir del intérprete pulsamos CTRL+D.  
@@ -99,9 +99,9 @@ print "Hola Mundo"
 1. Editamos archivo __hola.py__
 
 ```python
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-print "Hola mundo"
+print ("Hola mundo")
 ```
 
 
